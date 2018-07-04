@@ -1,5 +1,6 @@
-# HTML-Demo
-Just for HTML examples.
+# Tim McGowan
+
+A place for playing with code.
 
 ## How to Contribute
 ### Projects
