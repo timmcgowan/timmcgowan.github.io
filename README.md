@@ -1,37 +1,35 @@
-## Welcome to GitHub Pages
+# HTML-Demo
+Just for HTML examples.
 
-You can use the [editor on GitHub](https://github.com/timmcgowan/timmcgowan.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## How to Contribute
+### Projects
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+We utilize github projects for managing development.  [Introduction to github Projects](https://youtu.be/C6MGKHkNtxU)
+- Allows greater visibility for all teams in ge to see progress
+- Allows contributers to manage project enhancements and track progress
 
-### Markdown
+### Join Me!
+The first step to making this better is joining the community! You can find the
+community on:
+* [GitHub Issues](https://github.com/timmcgowan/HTML-Demo/issues)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Once you've joined, there are many ways to contribute to Revel:
 
-```markdown
-Syntax highlighted code block
+* Report bugs (via [GitHub issues](https://github.com/timmcgowan/HTML-Demo/issues))
+* Give feedback on new feature discussions (via GitHub!)
+* Propose your own ideas (via GitHub!)
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+### Create a Feature Branch & Code Away!
 
-1. Numbered
-2. List
+Now that you've properly installed and forked BOSS, you are ready to start coding (assuming you have a validated your ideas with other community members)!
 
-**Bold** and _Italic_ and `Code` text
+In order to have your pull requests accepted, we recommend you make your changes to BOSS on a new git branch. For example,
 
-[Link](url) and ![Image](src)
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/timmcgowan/timmcgowan.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+$ git checkout -b feature/useful-new-thing origin/develop
+# Create a new branch based on develop and switch to it
+$ ...
+# Make your changes and commit them
+$ git push fork feature/useful-new-thing \# After new commits, push to your fork
+``
