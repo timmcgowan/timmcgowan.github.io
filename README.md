@@ -14,7 +14,7 @@ The first step to making this better is joining the community! You can find the
 community on:
 * [GitHub Issues](https://github.com/timmcgowan/HTML-Demo/issues)
 
-Once you've joined, there are many ways to contribute to Revel:
+Once you've joined, there are many ways to contribute:
 
 * Report bugs (via [GitHub issues](https://github.com/timmcgowan/HTML-Demo/issues))
 * Give feedback on new feature discussions (via GitHub!)
@@ -23,7 +23,7 @@ Once you've joined, there are many ways to contribute to Revel:
 
 ### Create a Feature Branch & Code Away!
 
-Now that you've properly installed and forked BOSS, you are ready to start coding (assuming you have a validated your ideas with other community members)!
+Now that you've properly forked, you are ready to start coding (assuming you have a validated your ideas with other community members)!
 
 In order to have your pull requests accepted, we recommend you make your changes to BOSS on a new git branch. For example,
 
