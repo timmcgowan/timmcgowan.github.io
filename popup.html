@@ -1,0 +1,35 @@
+<html>
+
+<head>
+
+<script language="JavaScript">
+
+function prompts(form) {
+  opener.painput = form.painput.value;
+  opener.pbinput = form.pbinput.value;
+  opener.done();
+  self.close();
+  return false;
+}
+
+function cancel() {
+ self.close();
+  return false;
+}
+</script>
+
+</head>
+
+<body onLoad="document.myform.painput.focus()">
+
+<form name="myForm" onSubmit="return prompts(this)" onReset="cancel()">
+Player A Input: <input type="text" name="painput">
+<br>
+Player B Input: <input type="text" name="pbinput">
+<br>
+<input type="submit" value="  ok  "> <input type="reset" value="  cancel  ">
+</form>
+
+</body>
+
+</html>
