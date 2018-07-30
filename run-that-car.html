@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Run That Car!</title>
+  </head>
+  <body>
+
+  <div id="game">
+    <h1>Play Run that Car!</h1>
+        <h2>To Play press :</h2>
+        <ul>
+            <li>"h" to honk</li>
+            <li>"d" to drive to work</li>
+            <li>"w" to drive around the world</li>
+            <li>"t" for a tune up</li>
+        </ul>
+  </div>
+
+  <div id="myStats">demo</div>
+  
+  <script type="text/javascript">
+
+   var outtext = "demo 1";
+   var car = {
+        // Properties of our car object.
+        make: "Honda",
+        model: "Fit",
+        color: "Blue Raspberry",
+        mileage: 3000,
+        isWorking: true,
+        
+        // Creating the driveToWork method.
+        // A method is a function associated with an object.
+        driveToWork: function() {
+
+        // When we say "this" (as in this.mileage) we are referring to the object the method is a part of.
+        // In this case, we will alert the mileage of the car object.
+        outtext += "Old Mileage: " + this.mileage;
+
+        // Adding 8 to the car's mileage.
+        this.mileage = this.mileage + 8;
+
+        // Alerting the car's new mileage.
+        outtext +=  "New mileage: " + this.mileage ;
+        },
+
+        // The driveAroundWorld method adds 24,000 miles to our car, sets isWorking to false, and makes some alerts.
+        driveAroundWorld: function() {
+
+            outtext +=  "Old Mileage: " + this.mileage;
+
+            this.mileage = this.mileage + 24000;
+
+            outtext += "New Mileage: " + this.mileage;
+            outtext += "Car needs a tuneup!";
+
+            this.isWorking = false;
+            },
+   
+           // The getTuneUp method sets isWorking to true and alerts a message.
+           getTuneUp: function() {
+            outtext += "Car is ready to go!";
+            this.isWorking = true;
+            },
+
+        // The honk method alerts a honking message.
+        honk: function() {
+            outtext += "Honk! Honk!";
+            }
+        };
+
+   
+    // Creates an array that lists out all of the options (Rock, Paper, or Scissors).
+    var validChoices = ["h", "d", "w", "t"];
+
+    function writeMessage (message){
+      var w = window.open("", "MsgWindow", "width=225, height=150");
+      //w.document.open();
+      w.document.write("<P>"+ message + "</P>");
+             w.document.close();
+    }
+
+    function playGame(userPlay,outtext){
+      //validate userchoice against valid options
+      if ( validChoices.indexOf(userPlay) > -1 ) {
+        // ... Play Game... 
+        if (userPlay = "h") {
+            car.honk();
+        }
+        document.getElementById("myStats").innerHTML = outtext ;
+        // Alerts the Computer's guess.
+            return true
+      } else {
+      // end function if event is not valid for game).
+        return false
+      }
+ 
+    }
+    // This function is run whenever the user presses a key.
+    document.onkeyup = function(event) {
+
+      // Determines which key was pressed.
+      var userPlay = event.key;
+
+        playGame(userPlay, outtext);
+    };
+  </script> 
+
+</body>
+
+</html>
