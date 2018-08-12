@@ -1,7 +1,4 @@
 
-
-<script language="JavaScript">
-<!--
 var paInput = '';
 var pbInput = '';
 var windowReference;

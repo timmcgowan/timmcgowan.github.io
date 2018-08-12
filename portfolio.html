@@ -1,26 +1,29 @@
 <!doctype html>
 <html lang="en-us">
+
 <head>
   <meta charset="UTF-8">
   <title>Portfolio | Tim McGowan</title>
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="next" href="/index.html">
   <meta name="description" content="Coding Examples, fun project ideas, and other odd things.">
 </head>
+
 <body>
 
-<div class="wrapper">
-<script>
-    var header = document.querySelector('.o-header')
-    var navToggle = document.querySelector('.c-nav-toggle')
-    var searchToggle = document.querySelector('.c-search-toggle')
+  <div class="wrapper">
+    <script>
+      var header = document.querySelector('.o-header')
+      var navToggle = document.querySelector('.c-nav-toggle')
+      var searchToggle = document.querySelector('.c-search-toggle')
 
-    navToggle.addEventListener('click', function (event) {
+      navToggle.addEventListener('click', function (event) {
         event.preventDefault()
 
         var navToggleInner = document.querySelector('.c-nav-toggle__inner')
@@ -28,9 +31,9 @@
         header.classList.toggle('o-header--nav-open')
         navToggle.classList.toggle('c-nav-toggle--open')
         navToggleInner.classList.toggle('c-nav-toggle__inner--open')
-    })
+      })
 
-    searchToggle.addEventListener('click', function (event) {
+      searchToggle.addEventListener('click', function (event) {
         event.preventDefault()
 
         var productsLink = document.querySelector('.c-big-link--products')
@@ -43,87 +46,76 @@
         searchContainer.classList.toggle('o-header__search--open')
 
         if (searchContainer.classList.contains('o-header__search--open')) {
-            searchInput.focus()
+          searchInput.focus()
         }
-    })
-</script>  
-<!-- NavBar -->
-<header id="masthead" class="navbar" style="background-color: rgb(41, 48, 61);">
-    <nav class=" navbar navbar-expand-md navbar-dark" style="background-color: rgb(41, 48, 61);">
-      <a class="navbar-brand" href="index.html">Tim McGowan</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    </header>
- <!--   Test navhead
-<header id="masthead" class="navbar bg-dark">
-    <nav class= "navbar navbar-expand-md navbar-dark bg-dark">
-        <div class="navbar-brand">
-            <a class="navbar-brand" href="index.html">Tim McGowan</a>
-        </div>
-    <div>
-     <div class="nav-link-group">
-        <button class="navbar-toggler navbar-toggler-icon" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      })
+    </script>
+    <!-- NavBar -->
+    <header id="masthead" class="navbar" style="background-color: rgb(41, 48, 61);">
+      <nav class=" navbar navbar-expand-md navbar-dark" style="background-color: rgb(41, 48, 61);">
+        <a class="navbar-brand" href="index.html">Tim McGowan</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-      </div>
-      <div class="navbarlist collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    </nav>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">About
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
-  -->
-  <main class="container">
-    <section class="main-section">
-      <h1>Portfolio</h1>
-      <div class="work">
-          <a href="https://timmcgowan.github.io/rock-paper-scissors.html"><img height="180" width="auto"  src="https://upload.wikimedia.org/wikipedia/commons/6/67/Rock-paper-scissors.svg"  alt="Rock Paper Scissors"></a>
+    <main class="container">
+      <section class="main-section">
+        <h1>Portfolio</h1>
+        <div class="work">
+          <a href="https://timmcgowan.github.io/TriviaGame/">
+            <img height="180" width="auto" src="assets/img/EGA17.jpg" alt="Trivia Game">
+          </a>
+          <h3>USMC Trivia Game</h3>
+        </div>
+        <div class="work">
+          <a href="https://timmcgowan.github.io/robot-battles/">
+            <img height="180" width="auto" src="assets/img/rockemsocem.png" alt="Robot Battles (img by Scott Lewis)">
+          </a>
+          <h3>Robot Battles</h3>
+        </div>
+        <div class="work">
+          <a href="https://timmcgowan.github.io/Word-Guess-Game/">
+            <img height="180" width="auto" src="assets/img/technics-q-c-640-480-2.jpg" alt="Word Guess Game">
+          </a>
+          <h3>Word Guess Game</h3>
+        </div>
+        <div class="work">
+          <a href="https://timmcgowan.github.io/rock-paper-scissors.html">
+            <img height="180" width="auto" src="https://upload.wikimedia.org/wikipedia/commons/6/67/Rock-paper-scissors.svg" alt="Rock Paper Scissors">
+          </a>
           <h3>Rock Paper Scissors</h3>
         </div>
-      <div class="work">
-        <img height="180" width="auto"  src="assets/img/gopher.png" alt="Go Example">
-        <h3>Go Example</h3>
-      </div>
-      <div class="work">
-          <a href="https://timmcgowan.github.io/robot-battles/"><img height="180" width="auto" src="assets/img/rockemsocem.png"  alt="Robot Battles (img by Scott Lewis)"></a>
-          <h3>Robot Battles</h3>
-      </div>
-      <div class="work">
-        <a href="https://timmcgowan.github.io/Word-Guess-Game/"><img height="180" width="auto" src="assets/img/technics-q-c-640-480-2.jpg" alt="Word Guess Game"></a>
-        <h3>Word Guess Game</h3>
-      </div>  
-
-      <div class="work">
-          <a href="https://timmcgowan.github.io/rock-paper-scissors.html"><img height="180" width="auto" src="https://www.raspberrypi.org/homepage-9df4b/static/raspberry-pi-3B+.a8ffc54f.svg"  alt="Raspberry PI"></a>
+        <div class="work">
+          <a href="https://github.com/timmcgowan/godemo">
+            <img height="180" width="auto" src="assets/img/gopher.png" alt="Go Example">
+          </a>
+          <h3>Go Example</h3>
+        </div>
+        <div class="work">
+          <a href="https://timmcgowan.github.io/rock-paper-scissors.html">
+            <img height="180" width="auto" src="https://www.raspberrypi.org/homepage-9df4b/static/raspberry-pi-3B+.a8ffc54f.svg" alt="Raspberry PI">
+          </a>
           <h3>Raspberry Pi Projects</h3>
         </div>
-  
-<!--
+
+        <!--
 
       <img width="50" height="auto" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA0OTIuNCA2MTkuNSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDkyLjQgNjE5LjU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojMDIwMjAzO30KCS5zdDF7ZmlsbDojNkFCRjRCO30KCS5zdDJ7ZmlsbDojQzMxQzRBO30KPC9zdHlsZT4KPGc+Cgk8Zz4KCQk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTMzLjMsMGMtMy4yLDAuMS02LjYsMS41LTEwLjUsNC41Yy05LjUtMy42LTE4LjctNC45LTI3LDIuNWMtMTIuNy0xLjYtMTYuOSwxLjctMjAsNS43CgkJCUM3MywxMi42LDU0LjksOS44LDQ2LjYsMjJjLTIwLjktMi40LTI3LjUsMTIuMS0yMCwyNS43Yy00LjMsNi41LTguNywxMi45LDEuMywyNS4zYy0zLjUsNi45LTEuMywxNC40LDcsMjMuNQoJCQljLTIuMiw5LjcsMi4xLDE2LjYsOS45LDIxLjljLTEuNCwxMy4zLDEyLjQsMjEsMTYuNSwyMy44YzEuNiw3LjcsNC45LDE1LDIwLjcsMTkuMWMyLjYsMTEuNSwxMi4xLDEzLjUsMjEuMywxNgoJCQljLTMwLjQsMTcuNC01Ni40LDQwLjMtNTYuMiw5Ni40bC00LjQsNy44Yy0zNC44LDIwLjktNjYuMSw4Ny45LTE3LjIsMTQyLjRjMy4yLDE3LjEsOC42LDI5LjMsMTMuMyw0Mi45CgkJCWM3LjEsNTQuNiw1My44LDgwLjIsNjYuMSw4My4yYzE4LDEzLjUsMzcuMiwyNi40LDYzLjIsMzUuM2MyNC41LDI0LjksNTEsMzQuNCw3Ny43LDM0LjNjMC40LDAsMC44LDAsMS4yLDAKCQkJYzI2LjcsMCw1My4yLTkuNSw3Ny43LTM0LjNjMjYtOSw0NS4yLTIxLjgsNjMuMi0zNS4zYzEyLjMtMyw1OC45LTI4LjYsNjYuMS04My4yYzQuOC0xMy42LDEwLjEtMjUuOCwxMy4zLTQyLjkKCQkJYzQ5LTU0LjUsMTcuNy0xMjEuNS0xNy4yLTE0Mi40bC00LjUtNy44YzAuMi01Ni4xLTI1LjktNzktNTYuMi05Ni40YzkuMi0yLjQsMTguNy00LjQsMjEuMy0xNmMxNS44LTQsMTkuMS0xMS4zLDIwLjctMTkuMQoJCQljNC4xLTIuOCwxNy45LTEwLjUsMTYuNS0yMy44YzcuNy01LjMsMTItMTIuMiw5LjktMjEuOWM4LjMtOS4xLDEwLjUtMTYuNiw3LTIzLjVjMTAtMTIuNCw1LjYtMTguOCwxLjMtMjUuMwoJCQljNy41LTEzLjYsMC45LTI4LjEtMjAtMjUuN2MtOC4zLTEyLjItMjYuNC05LjQtMjkuMi05LjRjLTMuMS0zLjktNy4zLTcuMy0yMC01LjdjLTguMi03LjQtMTcuNS02LjEtMjctMi41CgkJCWMtMTEuMy04LjgtMTguOC0xLjctMjcuMywwLjlDMzI4LjYsMSwzMjUuNCw3LDMxOC43LDkuNWMtMTQuOS0zLjEtMTkuNSwzLjctMjYuNiwxMC44bC0wLjUtMC4yYy0yLjUtMS4yLTUuMy0xLjEtNy44LDAuMXYwCgkJCWMtMjIuNSwxMy4xLTMzLjcsMzkuNy0zNy42LDUzLjNjLTQtMTMuNy0xNS4xLTQwLjMtMzcuNi01My4zbC0wLjQtMC4yYy0yLjUtMS4xLTUuNC0xLTcuOCwwLjNsLTAuMSwwLjEKCQkJYy03LjItNy4xLTExLjctMTMuOS0yNi42LTEwLjhjLTYuNy0yLjUtOS44LTguNS0yMy41LTQuMWMtNS42LTEuNy04LjktNS42LTE1LTUuNEwxMzMuMywweiIvPgoJPC9nPgoJPHBhdGggY2xhc3M9InN0MSIgZD0iTTg4LjksNTcuN2M1OS43LDMwLjMsOTQuNCw1NC44LDExMy40LDc1LjdjLTkuNywzOC40LTYwLjUsNDAuMi03OS4xLDM5LjFjMy44LTEuNyw3LTMuOCw4LjEtNwoJCWMtNC43LTMuMy0yMS4yLTAuMy0zMi43LTYuN2M0LjQtMC45LDYuNS0xLjgsOC42LTVjLTEwLjktMy40LTIyLjYtNi40LTI5LjUtMTJjMy43LDAsNy4yLDAuOCwxMi4xLTIuNUM4MCwxMzQsNjkuNiwxMjkuOSw2MS41LDEyMgoJCWM1LTAuMSwxMC41LDAsMTIuMS0xLjljLTguOS01LjUtMTYuNS0xMS41LTIyLjctMTguMWM3LjEsMC44LDEwLDAuMSwxMS44LTEuMWMtNi44LTYuOC0xNS4zLTEyLjYtMTkuNC0yMWM1LjIsMS44LDEwLDIuNSwxMy41LTAuMgoJCWMtMi4zLTUuMS0xMi4xLTguMS0xNy44LTIwYzUuNSwwLjUsMTEuNCwxLjIsMTIuNSwwYy0yLjYtMTAuMy03LTE2LjEtMTEuMy0yMi4xYzExLjgtMC4yLDI5LjcsMCwyOC45LTAuOWwtNy4zLTcuNAoJCWMxMS41LTMuMSwyMy4zLDAuNSwzMS45LDMuMWMzLjgtMy0wLjEtNi44LTQuOC0xMC42YzkuOCwxLjMsMTguNywzLjUsMjYuNyw2LjZjNC4zLTMuOC0yLjgtNy42LTYuMi0xMS40CgkJYzE1LjIsMi44LDIxLjYsNi44LDI4LDEwLjhjNC42LTQuNCwwLjMtOC4xLTIuOS0xMS45YzExLjQsNC4yLDE3LjMsOS41LDIzLjUsMTQuOWMyLjEtMi44LDUuMy00LjgsMS40LTExLjYKCQljOC4xLDQuNiwxNC4yLDEwLDE4LjcsMTYuMWM1LTMuMSwzLTcuNSwzLTExLjRjOC40LDYuOCwxMy44LDEzLjksMjAuMywyMWMxLjMtMC45LDIuNS00LjIsMy41LTkuMmMyMC4xLDE5LjIsNDguNSw2Ny42LDcuMyw4Ni44CgkJQzE3Ny4zLDkzLjksMTM1LjQsNzMuMiw4OC45LDU3LjdMODguOSw1Ny43eiIvPgoJPHBhdGggY2xhc3M9InN0MSIgZD0iTTQwNS4xLDU3LjdjLTU5LjcsMzAuMy05NC40LDU0LjgtMTEzLjQsNzUuN2M5LjcsMzguNCw2MC41LDQwLjIsNzkuMSwzOS4xYy0zLjgtMS43LTctMy44LTguMS03CgkJYzQuNy0zLjMsMjEuMi0wLjMsMzIuNy02LjdjLTQuNC0wLjktNi41LTEuOC04LjYtNWMxMC45LTMuNCwyMi42LTYuNCwyOS41LTEyYy0zLjcsMC03LjIsMC44LTEyLjEtMi41YzkuOC01LjIsMjAuMi05LjMsMjguMy0xNy4yCgkJYy01LTAuMS0xMC41LDAtMTIuMS0xLjljOC45LTUuNSwxNi41LTExLjUsMjIuNy0xOC4xYy03LjEsMC44LTEwLDAuMS0xMS44LTEuMWM2LjgtNi44LDE1LjMtMTIuNiwxOS40LTIxCgkJYy01LjIsMS44LTEwLDIuNS0xMy41LTAuMmMyLjMtNS4xLDEyLjEtOC4xLDE3LjgtMjBjLTUuNSwwLjUtMTEuNCwxLjItMTIuNSwwYzIuNi0xMC4zLDctMTYuMSwxMS4zLTIyLjEKCQljLTExLjgtMC4yLTI5LjcsMC0yOC45LTAuOWw3LjMtNy40Yy0xMS41LTMuMS0yMy40LDAuNS0zMS45LDMuMWMtMy44LTMsMC4xLTYuOCw0LjgtMTAuNmMtOS44LDEuMy0xOC43LDMuNS0yNi43LDYuNgoJCWMtNC4zLTMuOCwyLjgtNy42LDYuMi0xMS40Yy0xNS4yLDIuOC0yMS42LDYuOC0yOCwxMC44Yy00LjYtNC40LTAuMy04LjEsMi45LTExLjljLTExLjQsNC4yLTE3LjMsOS41LTIzLjUsMTQuOQoJCWMtMi4xLTIuOC01LjMtNC44LTEuNC0xMS42Yy04LjEsNC42LTE0LjIsMTAtMTguNywxNi4xYy01LTMuMS0zLTcuNS0zLTExLjRjLTguNCw2LjgtMTMuOCwxMy45LTIwLjMsMjFjLTEuMy0wLjktMi41LTQuMi0zLjUtOS4yCgkJYy0yMC4xLDE5LjItNDguNSw2Ny42LTcuMyw4Ni44QzMxNi44LDkzLjksMzU4LjcsNzMuMiw0MDUuMSw1Ny43TDQwNS4xLDU3Ljd6Ii8+Cgk8Zz4KCQk8cGF0aCBjbGFzcz0ic3QyIiBkPSJNMzE5LjIsNDQ5LjFjMC4yLDM1LjktMzEuNiw2NS4xLTcxLjEsNjUuM2MtMzkuNSwwLjItNzEuNy0yOC43LTcxLjktNjQuNmMwLTAuMiwwLTAuNSwwLTAuNwoJCQljLTAuMi0zNS45LDMxLjYtNjUuMSw3MS4xLTY1LjNjMzkuNS0wLjIsNzEuNywyOC43LDcxLjksNjQuNkMzMTkuMiw0NDguNiwzMTkuMiw0NDguOCwzMTkuMiw0NDkuMXoiLz4KCQk8Zz4KCQkJPHBhdGggY2xhc3M9InN0MiIgZD0iTTIwNy43LDI2My41YzI5LjYsMTkuMSwzNSw2Mi41LDExLjksOTYuOGMtMjMsMzQuMy02NS43LDQ2LjctOTUuNCwyNy42bDAsMGMtMjkuNi0xOS4xLTM1LTYyLjUtMTEuOS05Ni44CgkJCQlDMTM1LjQsMjU2LjgsMTc4LjEsMjQ0LjQsMjA3LjcsMjYzLjVMMjA3LjcsMjYzLjV6Ii8+CgkJCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0yODcuNywyNjAuMWMtMjkuNiwxOS4xLTM1LDYyLjUtMTEuOSw5Ni44YzIzLDM0LjMsNjUuNyw0Ni43LDk1LjQsMjcuNmwwLDBjMjkuNi0xOS4xLDM1LTYyLjUsMTEuOS05Ni44CgkJCQlDMzYwLDI1My4zLDMxNy4zLDI0MSwyODcuNywyNjAuMUwyODcuNywyNjAuMXoiLz4KCQk8L2c+CgkJPGc+CgkJCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik02MS41LDI5NWMzMi04LjQsMTAuOCwxMzAuMy0xNS4yLDExOUMxNy42LDM5MS4zLDguNCwzMjQuOCw2MS41LDI5NXoiLz4KCQkJPHBhdGggY2xhc3M9InN0MiIgZD0iTTQzMS4xLDI5My4zYy0zMi04LjQtMTAuOCwxMzAuMywxNS4yLDExOUM0NzUsMzg5LjUsNDg0LjIsMzIzLjEsNDMxLjEsMjkzLjNMNDMxLjEsMjkzLjN6Ii8+CgkJPC9nPgoJCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0zMjMuOCwxODkuN2M1NS4yLTkuMiwxMDEuMSwyMy4xLDk5LjMsODIuMUM0MjEuMywyOTQuNCwzMDMuNSwxOTMuMSwzMjMuOCwxODkuN3oiLz4KCQk8cGF0aCBjbGFzcz0ic3QyIiBkPSJNMTcxLjMsMTg4Yy01NS4yLTkuMi0xMDEuMSwyMy4xLTk5LjMsODIuMUM3My45LDI5Mi43LDE5MS43LDE5MS4zLDE3MS4zLDE4OHoiLz4KCQk8cGF0aCBjbGFzcz0ic3QyIiBkPSJNMjQ3LjQsMTc0LjJjLTMyLjktMC44LTY0LjYsMjQuMS02NC42LDM4LjVjLTAuMSwxNy42LDI2LDM1LjYsNjQuOSwzNmMzOS42LDAuMyw2NC45LTE0LjQsNjUuMS0zMi41CgkJCUMzMTIuOCwxOTUuNywyNzYuNiwxNzMuOSwyNDcuNCwxNzQuMkwyNDcuNCwxNzQuMnoiLz4KCQk8cGF0aCBjbGFzcz0ic3QyIiBkPSJNMjQ5LjksNTM0LjVjMjguNy0xLjIsNjcuMyw5LjEsNjcuMywyMi44YzAuNSwxMy4zLTM1LDQzLjQtNjkuMiw0Mi45Yy0zNS41LDEuNS03MC4zLTI4LjctNjkuOS0zOS4xCgkJCUMxNzcuNiw1NDUuOCwyMjEuNCw1MzMuOCwyNDkuOSw1MzQuNUwyNDkuOSw1MzQuNXoiLz4KCQk8Zz4KCQkJPHBhdGggY2xhc3M9InN0MiIgZD0iTTE0My42LDQ1My4yYzIwLjQsMjQuMywyOS44LDY2LjksMTIuNyw3OS41Yy0xNi4xLDkuNi01NS40LDUuNi04My4yLTMzLjhjLTE4LjgtMzMuMS0xNi40LTY2LjgtMy4yLTc2LjcKCQkJCUM4OS43LDQxMC4zLDEyMC4xLDQyNi4zLDE0My42LDQ1My4yTDE0My42LDQ1My4yeiIvPgoJCQk8cGF0aCBjbGFzcz0ic3QyIiBkPSJNMzQ5LjUsNDQ1LjVjLTIyLjEsMjUuNS0zNC40LDcyLjEtMTguMyw4Ny4xYzE1LjQsMTEuNiw1Ni45LDEwLDg3LjUtMzEuOGMyMi4yLTI4LjEsMTQuOC03NSwyLjEtODcuNQoJCQkJQzQwMS45LDM5OC45LDM3NC44LDQxNy4zLDM0OS41LDQ0NS41TDM0OS41LDQ0NS41eiIvPgoJCTwvZz4KCTwvZz4KPC9nPgo8L3N2Zz4K">
 
@@ -132,13 +124,10 @@
       https://www.raspberrypi.org/homepage-9df4b/static/hello-world.02d4e78d.png
 -->
 
-      
-
-
-    </section>
-  </main>
-  <div class="push"></div>
-</div>
+      </section>
+    </main>
+    <div class="push"></div>
+  </div>
 
   <footer>
     <div class="container">
@@ -146,4 +135,5 @@
     </div>
   </footer>
 </body>
+
 </html>
