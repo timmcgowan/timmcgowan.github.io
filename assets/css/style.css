@@ -35,18 +35,6 @@ body {
   margin: 0 auto -100px;
 }
 
-.container {
-  /* Box-model */
-  width: 100%;
-  max-width: 960px;
-
-  /* Positioning */
-  margin: 0 auto;
-  clear: both;
-}
-
-
-
 p:last-child {
   margin-bottom: 0;
 }
