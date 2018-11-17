@@ -1,2 +1,2 @@
-# Responsive-Portfolio
-Responsive
+# My Portfolio
+Tim McGowan
