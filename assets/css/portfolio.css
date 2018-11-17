@@ -18,16 +18,12 @@ body {
     font-size: 6rem;
     line-height: 5.5rem;
   }
-  section.resume-section {
+  section.portfolio-section {
     padding-top: 5rem !important;
     padding-bottom: 5rem !important;
     max-width: 75rem;
-  }
-  
-  section.resume-section .resume-item .resume-date {
     min-width: none;
   }
-
   .subheading {
     text-transform: uppercase;
     font-weight: 500;
@@ -46,7 +42,63 @@ body {
   .social-icons a:hover { 
    color: grey !important;
   }
-  
+  /* portfolio page */
+
+.work {
+  /* Positioning */
+  position: relative;
+  float: left;
+  /* Box-model */
+  width: 274px;
+  margin: 5pt;
+  overflow: auto;
+}
+.certs {
+
+  /* Box-model */
+  margin: 15pt;
+}
+.work img {
+  /* Box-model */
+  width: 100%;
+
+  /* Visual */
+  border: 0 none;
+
+  /* Misc */
+  opacity: 0.8;
+}
+
+.work span {
+  /* Positioning */
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+
+  /* Box-model */
+  padding: 5px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 30px;
+
+  /* Typography */
+  color: #fff;
+  text-align: center;
+  background: #6c757d;
+
+  /* Visual */
+  border-bottom: 0;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block; 
+
+}
+.tooltip > .tooltip-inner {
+  background-color: #6c757d;
+}
+
  @media (min-width: 992px) {
     body {
       padding-top: 0;
@@ -106,71 +158,16 @@ body {
       display: block;
     }
   }
-/* portfolio page */
-
-.work {
-    /* Positioning */
-    position: relative;
-    float: left;
-    /* Box-model */
-    width: 274px;
-    margin: 5pt;
-    overflow: auto;
-  }
-
-  .work img {
-    /* Box-model */
-    width: 100%;
-  
-    /* Visual */
-    border: 0 none;
-  
-    /* Misc */
-    opacity: 0.8;
-  }
-  
-  .work span {
-    /* Positioning */
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-  
-    /* Box-model */
-    padding: 5px;
-    margin-bottom: 0;
-    font-weight: 300;
-    line-height: 30px;
-  
-    /* Typography */
-  
-    color: #fff;
-    text-align: center;
-    background: #6c757d;
-  
-    /* Visual */
-    border-bottom: 0;
-  }
-
-  .tooltip {
-    position: relative;
-    display: inline-block; 
-
-}
-.tooltip > .tooltip-inner {
-    background-color: #6c757d;
-}
 
 @media (min-width: 768px) {
-  section.resume-section {
-    min-height: 100vh;
-  }
-  section.resume-section .resume-item .resume-date {
+  section.portfolio-section {
+    min-height: 100vh; 
     min-width: 18rem;
   }
 }
 
 @media (min-width: 992px) {
-  section.resume-section {
+  section.portfolio-section {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
   }
