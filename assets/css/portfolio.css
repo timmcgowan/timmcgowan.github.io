@@ -54,10 +54,9 @@ body {
   overflow: auto;
 }
 .certs {
-
-  /* Box-model */
   margin: 15pt;
 }
+
 .work img {
   /* Box-model */
   width: 100%;
