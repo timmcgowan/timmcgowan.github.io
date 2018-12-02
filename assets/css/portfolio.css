@@ -37,7 +37,7 @@ body {
     color: black !important;  
   }
   .social-icons a { 
-    color: black !important;
+    color: #868e96 !important;
   }
   .social-icons a:hover { 
    color: grey !important;
@@ -54,7 +54,9 @@ body {
   overflow: auto;
 }
 .certs {
-  margin: 15pt;
+  position: relative;
+  margin: 0 15pt 5pt 5pt; 
+  /* margin: 15pt; */
 }
 
 .work img {
@@ -156,6 +158,15 @@ body {
     #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
       display: block;
     }
+    .footer {
+      bottom: 0;
+      width: 100%;
+      /* Set the fixed height of the footer here */
+      height: 120px;
+      line-height: 60px; /* Vertically center the text there */
+      background-color: #f5f5f5;
+    } 
+    
   }
 
 @media (min-width: 768px) {
